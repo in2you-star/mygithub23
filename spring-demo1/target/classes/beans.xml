@@ -6,14 +6,20 @@
 
     <bean id="userMysql" class="com.kun.dao.impl.UserMysqlDaoImpl"></bean>
     <bean id="userOracle" class="com.kun.dao.impl.UserOracleDaoImpl"></bean>
+    <bean id="userSqlServer" class="com.kun.dao.impl.UserSqlServerDaoImpl"></bean>
 
     <bean id="UserServiceImpl" class="com.kun.service.impl.UserServiceImpl">
-        <property name="userDao" ref="userMysql"></property>
+        <property name="userDao" ref="userSqlServer"></property>
     </bean>
 
     <bean id="user" class="com.kun.pojo.User">
         <property name="uid" value="1001"></property>
         <property name="uname" value="张三"></property>
+    </bean>
+
+    <bean id="emp" class="com.kun.pojo.Emp">
+        <property name="id" value="101"></property>
+        <property name="name" value="坤哥"></property>
     </bean>
 
 </beans>
