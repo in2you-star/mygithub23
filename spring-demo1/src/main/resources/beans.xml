@@ -16,4 +16,8 @@
         <property name="uname" value="张三"></property>
     </bean>
 
+    <bean id="emp" class="com.kun.pojo.Emp">
+
+    </bean>
+
 </beans>
