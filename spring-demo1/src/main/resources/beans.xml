@@ -17,7 +17,8 @@
     </bean>
 
     <bean id="emp" class="com.kun.pojo.Emp">
-
+        <property name="id" value="101"></property>
+        <property name="name" value="坤哥"></property>
     </bean>
 
 </beans>
