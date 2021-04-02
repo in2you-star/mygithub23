@@ -26,5 +26,6 @@ public class Emp {
 
     public void show(){
         System.out.println(id+name);
+        System.out.println("欢迎来到英雄联盟");
     }
 }
